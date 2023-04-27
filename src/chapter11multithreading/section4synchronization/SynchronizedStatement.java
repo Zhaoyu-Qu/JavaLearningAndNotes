@@ -9,14 +9,10 @@ public class SynchronizedStatement {
     public static void main(String[] args) {
         Bottle bottle = new Bottle();
         SyncedKettle[] kettles = new SyncedKettle[2];
-        for (int i = 0; i < kettles.length; i++) {
-            kettles[i] = new SyncedKettle(bottle);
+        for (Kettle kettle : kettles) {
+            kettle = new SyncedKettle(bottle);
+            kettle.start();
         }
-
-        for (int i = 0; i < kettles.length; i++) {
-            kettles[i].start();
-        }
-
     }
 }
 
