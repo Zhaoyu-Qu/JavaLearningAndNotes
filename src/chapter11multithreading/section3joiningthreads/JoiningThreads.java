@@ -1,5 +1,4 @@
 package chapter11multithreading.section3joiningthreads;
-
 /**
  * The referee (main thread) will only start the game when both players(threads) are ready (finished)
  */
