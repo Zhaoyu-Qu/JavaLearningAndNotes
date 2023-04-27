@@ -1,9 +1,10 @@
 package chapter11multithreading.section3joiningthreads;
+
 import java.util.Random;
+
 /**
  * The referee (main thread) will only start the game when both players(threads) are ready (finished)
  */
-
 public class JoiningThreads {
     public static void main(String[] args) {
         Player[] players = new Player[2];
